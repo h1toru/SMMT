@@ -24,17 +24,3 @@ set_permissions() {
 	# DO NOT MODIFY ANYTHING AFTER THIS
 	ls -A ${MODPATH}/ | grep '\.sh' | while read sh_file; do chmod a+x ${sh_file}; done
 }
-
-##################################################
-# DO NOT MODIFY ANYTHING AFTER THIS
-##################################################
-
-# KernelSU requirement (v0.6.6+)
-require_new_ksu() {
-	ui_print "**********************************"
-	ui_print " Please install KernelSU v0.6.6+! "
-	ui_print "**********************************"
-	exit 1
-}
-
-[ $KSU_VER_CODE -lt 11184 ] && require_new_ksu
