@@ -1,0 +1,7 @@
+id=SMMT
+name=Simple Magisk Module Template
+version=v1.0
+versionCode=1000
+author=h1toru
+description=Simple Magisk Module Template with KernelSU support.
+updateJson=
